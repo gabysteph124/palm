@@ -2,3 +2,12 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+
+#pictures {
+  background-color: lightblue;
+}
+
+#pictures li {
+  list-style-type: none;
+  margin-left: 2em;
+}

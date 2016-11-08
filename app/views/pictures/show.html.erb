@@ -1,13 +1,12 @@
+<%= link_to 'Home', pictures_path, class: 'btn btn-default btn-sm' %>
 <p id="notice"><%= notice %></p>
 
 <p>
-  <!-- <strong>Url:</strong> -->
-  <%= image_tag @picture.url %>
+  <h1><%= @picture.location %></h1>
 </p>
 
 <p>
-  <strong>Location:</strong>
-  <%= @picture.location %>
+  <%= image_tag @picture.url %>
 </p>
 
 <p>
@@ -26,6 +25,3 @@
 
 <h3>New Review</h3>
 <%= render 'reviews/form' %>
-
-<!-- <%= link_to 'Edit', edit_picture_path(@picture) %> | -->
-<%= link_to 'Home', pictures_path %>
