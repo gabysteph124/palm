@@ -3,12 +3,14 @@
 <h1>Top Cities in Florida</h1>
 
 <div id="pictures">
+  <ul>
   <% @pictures.each do |picture| %>
   <br>
     <li><strong><%= picture.location %></strong></li>
     <li><%= image_tag picture.url %></li>
     <li id="view-button"><%= link_to 'View More', picture, class: 'btn btn-default btn-sm' %></li>
     <% end %>
+  </ul>
   <br>
 </div>
 
