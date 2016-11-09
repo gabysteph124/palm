@@ -1,18 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Top Cities in Florida</h1>
+<body>
 
-<div id="pictures">
-  <ul>
-  <% @pictures.each do |picture| %>
-  <br>
-    <li><strong><%= picture.location %></strong></li>
-    <li><%= image_tag picture.url %></li>
-    <li id="view-button"><%= link_to 'View More', picture, class: 'btn btn-default btn-sm' %></li>
-    <% end %>
-  </ul>
-  <br>
-</div>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><%= link_to 'Home', pictures_path %></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="site-title">Top Cities in Florida</h1>
+
+  <section id="main-article">
+    Florida, the Sunshine State. Its nickname certainly rings true as this is one of the sunniest states in the country, making it a popular place to live, but Florida is not without its bad weather too! Known around the globe as the home of Walt Disney World, the Kennedy Space Center, the Everglades, and bustling cities like Miami, Jacksonville, and Orlando, Florida is a great place to visit and live!
+  </section>
+
+  <section id="locations">
+    <div class="each-location">
+      <ul>
+        <% @pictures.each do |picture| %><br>
+        <div class="image">
+          <li><h3><%= picture.location %></h3></li>
+          <li class="picture"><%= image_tag picture.url %></li>
+          <li id="view-button"><%= link_to 'View More', picture, class: 'btn btn-default btn-sm' %></li>
+        </div>
+        <% end %>
+      </ul>
+      <br>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <ul class="navbar">
+        <li><%= link_to 'Home', pictures_path %></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
 
 <!-- Removed button for demo -->
 <!-- <%= link_to 'New Picture', new_picture_path, class: 'btn btn-default btn-sm' %> -->

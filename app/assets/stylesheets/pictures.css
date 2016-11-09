@@ -3,10 +3,90 @@
   They will automatically be included in application.css.
 */
 
-#pictures {
-  background-color: lightblue;
+* {
+  box-sizing: border-box;
 }
 
-#pictures li {
+li {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+@media only screen and (min-width : 360px) {
+
+  /*----------------------------------------*/
+  /*-----------------HEADER-----------------*/
+  /*----------------------------------------*/
+
+  header {
+    background-color: lightblue;
+  }
+
+  a, a:visited {
+    color:white;
+  }
+
+  a:hover {
+    /*color:lightgrey;*/
+  }
+
+  .navbar {
+    margin:0;
+    padding:0;
+    display: flex;
+    padding: 0.5em 0 0.5em 1em;
+  }
+
+  /*----------------------------------------*/
+  /*-----------------TITLE------------------*/
+  /*----------------------------------------*/
+
+  #site-title {
+    text-align: center;
+    /*background-color: orange;*/
+  }
+
+  /*----------------------------------------*/
+  /*--------MAIN ARTICLE SECTION------------*/
+  /*----------------------------------------*/
+
+  #main-article {
+    padding: 0 0.75em 0 0.75em;
+    /*background-color: yellow;*/
+  }
+
+  /*----------------------------------------*/
+  /*-------------LOCATIONS SECTION-------------*/
+  /*----------------------------------------*/
+
+  #locations {
+    /*background-color: lightgray;*/
+    display:flex;
+    flex-direction: row;
+  }
+
+  .each-location {
+    display: flex;
+    flex-direction: column;
+    padding: 0.75em;
+  }
+
+  .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  /*----------------------------------------*/
+  /*-----------------FOOTER-----------------*/
+  /*----------------------------------------*/
+
+  footer {
+    margin-top: 1em;
+    background-color: lightblue;
+  }
+
 }

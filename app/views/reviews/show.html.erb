@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>picture:</strong>
   <%= @review.picture.location %>
 </p>
 
-<%= link_to 'Edit', reviews_path(@review) %> |
+<!-- Button hidden for demo purpose -->
+<!-- <%= link_to 'Edit', reviews_path(@review) %> | -->
 
 <% if @review.picture.nil? %>
   <%= link_to 'Back', reviews_path %>
 
 <% else %>
-  <%= link_to 'Done', @review.picture %>
+  <%= link_to 'Done', @review.picture, class: 'btn btn-default btn-sm' %>
 <% end %>
