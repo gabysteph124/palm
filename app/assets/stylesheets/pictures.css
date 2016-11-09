@@ -22,16 +22,12 @@ a {
   /*-----------------HEADER-----------------*/
   /*----------------------------------------*/
 
-  header {
-    background-color: lightblue;
-  }
-
   a, a:visited {
     color:white;
   }
 
   a:hover {
-    /*color:lightgrey;*/
+    color:lightgrey;
   }
 
   .navbar {
@@ -41,14 +37,20 @@ a {
     padding: 0.5em 0 0.5em 1em;
   }
 
+  .navbar-inverse {
+    font-size: 20px;
+  }
+
   /*----------------------------------------*/
   /*-----------------TITLE------------------*/
   /*----------------------------------------*/
 
   #site-title {
+    margin-top: 2em;
     text-align: center;
-    /*background-color: orange;*/
-  }
+    font-family: fantasy;
+    font-size: 5em;
+   }
 
   /*----------------------------------------*/
   /*--------MAIN ARTICLE SECTION------------*/
@@ -56,7 +58,6 @@ a {
 
   #main-article {
     padding: 0 0.75em 0 0.75em;
-    /*background-color: yellow;*/
   }
 
   /*----------------------------------------*/
@@ -64,7 +65,7 @@ a {
   /*----------------------------------------*/
 
   #locations {
-    /*background-color: lightgray;*/
+    background-color: none;
     display:flex;
     flex-direction: row;
   }
@@ -79,14 +80,4 @@ a {
     width: 100%;
     height: auto;
   }
-
-  /*----------------------------------------*/
-  /*-----------------FOOTER-----------------*/
-  /*----------------------------------------*/
-
-  footer {
-    margin-top: 1em;
-    background-color: lightblue;
-  }
-
 }
