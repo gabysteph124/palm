@@ -20,6 +20,7 @@
         <%= @picture.description %>
       </p>
 
+    <div class="reviews"
       <h5>New Review</h5>
       <%= render 'reviews/form' %>
 
@@ -30,6 +31,7 @@
           <i>Posted <%= time_ago_in_words review.created_at %></i>
         </p>
       <% end %>
+    </div>
     </div>
 
 </body>
