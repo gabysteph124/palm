@@ -67,13 +67,23 @@ a {
   #locations {
     background-color: none;
     display:flex;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .each-location {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 0.75em;
+  }
+
+  #center-photo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #shrink {
+    max-width: 400px;
+    border-radius: 75%;
   }
 
   .picture {

@@ -18,15 +18,21 @@
 
   <section id="locations">
     <div class="each-location">
-      <ul>
+
+
         <% @pictures.each do |picture| %><br>
-        <div class="image">
-          <li><h3><%= picture.location %></h3></li>
-          <li class="picture"><%= image_tag picture.url %></li>
-          <li id="view-button"><%= link_to 'View More', picture, class: 'btn btn-default btn-sm' %></li>
+        <div id="center-photo">
+
+          <ul>
+            <li><h3><%= picture.location %></h3></li>
+            <li><img id="shrink"<%= image_tag picture.url %></li>
+            <li id="view-button"><%= link_to 'View More', picture, class: 'btn btn-default btn-sm' %></li>
+          </ul>
+
         </div>
         <% end %>
-      </ul>
+
+
       <br>
     </div>
   </section>
